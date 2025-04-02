@@ -89,22 +89,16 @@
             <img src="MS_Logo.png" alt="Logo"> <!-- Replace with your logo -->
 <form name="contact" method="POST" data-netlify="true">
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>
+     <input type="email" placeholder="Your email" required>
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" /></label>
+     <input type="password" placeholder="New password" required>
   </p>
   <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
+     <input type="password" placeholder="Reenter password" required>
   </p>
   <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
+    <button type="submit">Submit</button>
   </p>
 </form>
         </div>
