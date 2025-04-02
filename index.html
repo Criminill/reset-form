@@ -62,21 +62,12 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            text-align: right; /* Ensures the button aligns right */
         }
 
         .form-container button:hover {
             background-color: #0056b3;
         }
-
-        .form-container .submit-btn {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            text-align: right; /* Ensures the button aligns right */
-    }
 
         /* Responsive design */
         @media (max-width: 600px) {
@@ -101,7 +92,7 @@
     <input type="email" placeholder="Your email" name="name" required/>
     <input type="password" placeholder="New password" name="new password" required/>
     <input type="password" placeholder="Reenter password" name="reenter password" required/>
-    <button type="submit" class="submit-btn">Submit</button>
+    <button type="submit">Submit</button>
 </form>
         </div>
     </div>
